@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Celcius_Farenheihgt</string>
+    <string name="Text_Size">32dp</string>
+    <string name="grados_kelvin">Grados Kelvin =</string>
+    <string name="grados_farenheight">Grados Farenheight =</string>
+    <string name="button">Button</string>
+    <string name="Grados_Kelvin">Escribe Grado Celcius</string>
+
+</resources>

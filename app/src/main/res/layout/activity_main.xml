@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="67dp"
+        android:autofillHints=""
+        android:background="@color/purple_700"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/Grados_Kelvin"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#CCC1C1"
+        android:textColorHint="#CCC1C1"
+        android:textSize="@dimen/TamañoLT_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/purple_700"
+        android:gravity="center|left|center_vertical"
+        android:text="@string/grados_kelvin"
+        android:textColor="#CCC1C1"
+        android:textSize="@dimen/TamañoLT_24sp"
+        app:circularflow_radiusInDP="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCelcius"
+        app:layout_constraintTop_toBottomOf="@+id/etCelcius" />
+
+    <TextView
+        android:id="@+id/tvFarenheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/purple_700"
+        android:gravity="left|center_vertical"
+        android:text="@string/grados_farenheight"
+        android:textColor="#CCC1C1"
+        android:textSize="@dimen/TamañoLT_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvKelvin"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelvin" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="232dp"
+        android:background="@color/naranja_alto"
+        android:onClick="Pasar_Kelvin_Farenheight"
+        android:text="@string/button"
+        android:textColor="#5D4037"
+        android:textSize="@dimen/TamañoLT_24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvFarenheight"
+        app:layout_constraintTop_toBottomOf="@+id/tvFarenheight"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UsingOnClickInXml" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
